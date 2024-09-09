@@ -3,17 +3,17 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { RootState } from "../../app/store";
 
 // Define a type for the slice state
-interface CounterState {
+interface UserState {
     value: number;
 }
 
 // Define the initial state using that type
-const initialState: CounterState = {
+const initialState: UserState = {
     value: 0,
 };
 
-export const counterSlice = createSlice({
-    name: "counter",
+export const userSlice = createSlice({
+    name: "user",
     // `createSlice` will infer the state type from the `initialState` argument
     initialState,
     reducers: {
@@ -30,9 +30,9 @@ export const counterSlice = createSlice({
     },
 });
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+export const { increment, decrement, incrementByAmount } = userSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
 export const selectCount = (state: RootState) => state.counter.value;
 
-export default counterSlice.reducer;
+export default userSlice.reducer;
