@@ -4,9 +4,9 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "prisma.showPrismaDataPlatformNotification": false,
+  "dart.flutterSdkPath": "/home/abdullah/dev/flutter",
   "hubspot.neverUseHubl": true,
   "git.openRepositoryInParentFolders": "never",
-  "dart.flutterSdkPath": "/usr/bin/flutter",
   "editor.fontSize": 20,
   "editor.fontFamily": "Fira Code, Operator Mono",
   "editor.fontLigatures": true,
@@ -92,5 +92,7 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
-  }
+  },
+  "window.titleBarStyle": "custom",
+  "workbench.startupEditor": "none"
 }
